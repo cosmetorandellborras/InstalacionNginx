@@ -27,7 +27,7 @@ sudo cp default prueba1.nginx
 ~~~
 ![Captura3](https://github.com/cosmetorandellborras/InstalacionNginx/blob/main/Captura3.png)
 ### Paso 2
-Procedemos a abrir con un editor de textos los archivos que hemos creado en el paso anterior con el siguiente comando
+Procedemos a abrir con un editor de textos los archivos que hemos creado en el paso anterior con el siguiente comando.
 ~~~
 sudo nano prueba1.nginx
 ~~~
@@ -38,7 +38,7 @@ En ellos tenemos que modificar los siguientes parámetros:
 ![Captura4](https://github.com/cosmetorandellborras/InstalacionNginx/blob/main/Captura4.png)
 **Este paso hay que realizarlo con todos los archivos que hemos creado en el paso anterior**
 ### Paso 3
-Nos posicionamos en el directorio sites-enabled y lanzamos el comando "ll" para ver la informacion detallada del contenido del directorio mediante los siguientes comandos
+Nos posicionamos en el directorio sites-enabled y lanzamos el comando "ll" para ver la informacion detallada del contenido del directorio mediante los siguientes comandos.
 ~~~
 cd ..
 cd sites-enabled/
@@ -46,14 +46,14 @@ ll
 ~~~
 ![Captura6](https://github.com/cosmetorandellborras/InstalacionNginx/blob/main/Captura6.png)
 ### Paso 4
-Hacemos un link simbólico de los archivos de sites-available en el directorio sites-enabled mediante los siguientes comandos
+Hacemos un link simbólico de los archivos de sites-available en el directorio sites-enabled mediante los siguientes comandos.
 ~~~
 sudo ln -s ../sites-available/prueba1.nginx
 sudo ln -s ../sites-available/prueba2.nginx
 ~~~
 ![Captura7](https://github.com/cosmetorandellborras/InstalacionNginx/blob/main/Captura7.png)
 ### Paso 5
-Reiniciamos el servicio Nginx con los siguientes comandos
+Reiniciamos el servicio Nginx con los siguientes comandos.
 ~~~
 sudo service nginx restart
 sudo nginx -s reload
