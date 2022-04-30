@@ -88,7 +88,9 @@ mv mini_car_game.html index.html
 **Este paso hay que realizarlo con cada archivo html**
 ## Comprobaciones
 Una vez realizado todo el apartado de configuración, procederemos a abrir nuestro navegador e introducir la dirección de cada dominio creado. Si la configuración se ha realizado de manera exitosa nos aparecerá la web que hemos configurado.
+
 Por ejemplo, en nuestro caso se han configurado dos dominios, uno llamado prueba1.nginx y otro llamado prueba2.nginx
+
 Si introducimos en el navegador el primer dominio nos aparecerá la primera web que hemos configurado.
 ![Captura12](https://github.com/cosmetorandellborras/InstalacionNginx/blob/main/Captura12.png)
 Si introducimos en el navegador el segundo dominio nos aparecerá la segunda web que hemos configurado.
